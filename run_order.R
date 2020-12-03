@@ -15,7 +15,7 @@ bac = place_any(bac, p["size"])
 pha = place_any(pha, p["size"])
 #plot_all(bac, pha, p["size"])
 
-times = 1000
+times = 100
 
 summary_data = data.frame(Time=c(0:times), Bs=0, Be=0, P=0, Pe=0)
 summary_data[1,"Bs"] = length(which(bac$status=="S"))

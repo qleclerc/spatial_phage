@@ -14,12 +14,16 @@ update_all(data_bac, data_pha, p, tr_count = 0)
 \item{p}{General parameters. These must have been created using the set_params function.}
 }
 \value{
-An updated dataset
+Updated phae and bacteria datasets, assigned to the global environment
 }
 \description{
 Updates the bacteria infections by phage, generating or decaying phage
 }
+\details{
+This function is not best practice, as it updates the datasets by
+forcibly reassigning them to the gloabl environment!!
+}
 \examples{
-dots_data = update_dots(data=dots_data, gen=0, p=params)
+update_all(data_bac=data_bac, data_pha=data_pha, gen=0, p=params)
 
 }

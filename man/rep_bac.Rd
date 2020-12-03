@@ -4,7 +4,7 @@
 \alias{rep_bac}
 \title{Replication of bacteria}
 \usage{
-rep_bac(data, size = 100, rep_bac = 2)
+rep_bac(data, size = 100, rep_bac = 2, rep_bac_res = 0)
 }
 \arguments{
 \item{data}{The dataset containing the bacteria information}
@@ -12,6 +12,8 @@ rep_bac(data, size = 100, rep_bac = 2)
 \item{size}{The size of the space within which to place the bacteria or phage. Must be the same as the one used to place them.}
 
 \item{rep_bac}{Replication rate of bacteria}
+
+\item{rep_bac_res}{Replication rate of resistant bacteria}
 }
 \value{
 An updated dataset
@@ -20,6 +22,6 @@ An updated dataset
 Randomly replicate bacteria, depending on space available
 }
 \examples{
-bac_data = rep_bac(data=bac_data, size=100, rep_bac=2)
+bac_data = rep_bac(data=bac_data, size=100, rep_bac=2,rep_bac_res=2)
 
 }

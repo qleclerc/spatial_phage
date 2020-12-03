@@ -2,14 +2,17 @@
 #'
 #' @description Updates the bacteria infections by phage, generating or decaying phage
 #'
+#' @details This function is not best practice, as it updates the datasets by
+#' forcibly reassigning them to the gloabl environment!!
+#'
 #' @param data_bac The dataset containing the bacteria information
 #' @param data_pha The dataset containing the phage information
 #' @param p General parameters. These must have been created using the set_params function.
 #'
-#' @return An updated dataset
+#' @return Updated phae and bacteria datasets, assigned to the global environment
 #'
 #' @examples
-#' dots_data = update_dots(data=dots_data, gen=0, p=params)
+#' update_all(data_bac=data_bac, data_pha=data_pha, gen=0, p=params)
 #'
 #' @export
 
@@ -32,11 +35,6 @@ update_all = function(data_bac,data_pha,p,tr_count=0){
         if(data_pha[j,"status"] != "gone"){
 
           if(data_bac[i,"x"]==data_pha[j,"x"] && data_bac[i,"y"]==data_pha[j,"y"]){
-
-            if(data_bac[i,"status"] == "M"){
-              data_pha[j,"status"] = "gone"
-              next()
-            }
 
             if(p["beta"]>runif(1)){
 

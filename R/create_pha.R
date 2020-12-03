@@ -13,8 +13,6 @@
 
 create_pha = function(num=10){
 
-  if(num %% 2 != 0) stop("Num must be even")
-
   x = rep(0,num)
   y = rep(0,num)
   status = rep("P",num)

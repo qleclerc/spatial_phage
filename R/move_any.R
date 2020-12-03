@@ -18,13 +18,10 @@ move_any = function(data,size=100,movement=5){
   if(dim(data)[1] == 0) return(data)
 
   for(i in 1:dim(data)[1]){
-    if(data[i,"status"]=="M"){
-      new_x = data[i,"x"]+sample(-(movement+50):(movement+50),1)
-      new_y = data[i,"y"]+sample(-(movement+50):(movement+50),1)
-    } else {
+
     new_x = data[i,"x"]+sample(-movement:movement,1)
     new_y = data[i,"y"]+sample(-movement:movement,1)
-    }
+
     if(new_x>size){
       new_x = size
     }

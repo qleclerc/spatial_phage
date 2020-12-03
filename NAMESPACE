@@ -3,6 +3,7 @@
 export(create_bac)
 export(create_pha)
 export(move_any)
+export(mutate_bac)
 export(place_any)
 export(plot_all)
 export(rep_bac)

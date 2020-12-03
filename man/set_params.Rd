@@ -7,7 +7,10 @@
 set_params(
   size = 250,
   rep_bac = 2,
+  rep_bac_res = 2,
   movement_bac = 10,
+  abx_con = 0,
+  mutate_bac = 0,
   movement_pha = 10,
   beta = 0.5,
   burst = 10,
@@ -19,6 +22,8 @@ set_params(
 \item{size}{The size of the space within which the bacteria and phage can move.}
 
 \item{rep_bac}{Replication rate of bacteria}
+
+\item{rep_bac_res}{Replication rate of resistant bacteria}
 
 \item{movement_bac}{The maximum distance that bacteria can move during one generation}
 

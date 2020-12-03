@@ -4,10 +4,12 @@
 \alias{create_bac}
 \title{Creation of "PhageSim" dataset for bacteria}
 \usage{
-create_bac(num = 10)
+create_bac(num = 10, prop_res = 0.5)
 }
 \arguments{
 \item{num}{The number of bacteria in the dataset}
+
+\item{prop_res}{Starting proportion of bacteria that are resistant to antibiotics}
 }
 \value{
 A dataset
@@ -15,10 +17,7 @@ A dataset
 \description{
 Creates a dataset with a specified number of bacteria to use with other functions
 }
-\details{
-Currently only supports 50-50 start of single resistance, need to customize
-}
 \examples{
-bac_data = create_bac(num=10)
+bac_data = create_bac(num=10, prop_res = 0.5)
 
 }

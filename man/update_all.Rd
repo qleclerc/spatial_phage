@@ -4,7 +4,7 @@
 \alias{update_all}
 \title{Update bacteria infections by phage}
 \usage{
-update_all(data_bac, data_pha, p)
+update_all(data_bac, data_pha, p, tr_count = 0)
 }
 \arguments{
 \item{data_bac}{The dataset containing the bacteria information}

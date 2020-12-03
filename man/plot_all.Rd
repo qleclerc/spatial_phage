@@ -4,7 +4,7 @@
 \alias{plot_all}
 \title{Plots the bacteria and phage}
 \usage{
-plot_all(data_bac, data_pha, size = 100)
+plot_all(data_bac, data_pha, size = 100, legnd = T, title = NULL)
 }
 \arguments{
 \item{data_bac}{The dataset containing the bacteria information}

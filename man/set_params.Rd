@@ -4,9 +4,16 @@
 \alias{set_params}
 \title{Create the transmission kernel parameters}
 \usage{
-set_params(size = 250, rep_bac = 2, movement_bac = 10,
-  movement_pha = 10, beta = 0.5, burst = 10, trans = 0.1,
-  decay = 0.5)
+set_params(
+  size = 250,
+  rep_bac = 2,
+  movement_bac = 10,
+  movement_pha = 10,
+  beta = 0.5,
+  burst = 10,
+  trans = 0.1,
+  decay = 0.5
+)
 }
 \arguments{
 \item{size}{The size of the space within which the bacteria and phage can move.}
